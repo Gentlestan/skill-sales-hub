@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 import aboutPortrait from '../assets/images/aboutPortrait.jpg'; // adjust path as needed
 
@@ -56,7 +57,7 @@ export default function About() {
       <section className="about-cta">
         <h2>Let’s Build Your Next Breakthrough</h2>
         <p>Ready to scale with powerful, persuasive copy? Let's connect.</p>
-        <a href="contact" className="cta-button">Work With Me</a>
+        <a href="/contact" className="cta-button">Work With Me</a>
       </section>
     </div>
   );
