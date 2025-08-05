@@ -1,0 +1,46 @@
+/* TestimonialCard.css or .module.css */
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f5f7fa;
+  color: #0b1d51;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  width: 80%; /* Or 100% with margin */
+  max-width: none; /* Ensure it's not limited by flex-basis/grid */
+  margin-inline: auto;
+}
+
+.testimonial-img-wrapper {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop layout */
+@media (min-width: 800px) {
+  .testimonial-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem;
+  }
+  .testimonial-img-wrapper {
+    width: 120px;
+    height: 120px;
+    margin-right: 1.5rem;
+  }
+}

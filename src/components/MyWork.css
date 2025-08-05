@@ -1,0 +1,164 @@
+/* Base & utilities */
+.portfolio-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  color: #f5f7fa;
+  font-family: "Segoe UI", sans-serif;
+}
+.cta-button {
+  background: #ff6f61;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background: #e85c4f;
+}
+
+/* Hero */
+.portfolio-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.portfolio-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #a3bffa;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Project Cards */
+.project-card {
+  background: #1d2c5e;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.project-image-wrapper {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.project-image-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  filter: grayscale(30%);
+  transition: filter 0.4s ease;
+}
+.project-card:hover img {
+  filter: none;
+}
+.metrics-overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ff6f61;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Info */
+.project-info {
+  padding: 1rem;
+}
+.project-info h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.3rem;
+  color: #a3bffa;
+}
+.project-client {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+  color: #ccc;
+}
+
+/* Modal (case study detail) */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 2000;
+}
+.modal-content {
+  background: #0b1d51;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  padding: 2rem;
+  border-radius: 8px;
+  overflow-y: auto;
+  color: #f5f7fa;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Story & secondary images */
+.story {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+.story p {
+  margin-bottom: 1rem;
+}
+.more-images {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+.more-images img {
+  max-height: 200px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+/* Footer CTA */
+.portfolio-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+.portfolio-cta h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .portfolio-hero h1 {
+    font-size: 2.4rem;
+  }
+  .modal-content {
+    padding: 1rem;
+  }
+}

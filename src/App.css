@@ -1,0 +1,24 @@
+/*
+Background & Text
+Background: Dark Navy — #0B1D51
+
+Text: Soft Off-White — #F5F7FA
+
+Nav Links & Buttons
+Default Text: Light Slate Blue — #A3BFFA
+
+Hover: Bright Coral — #FF6F61
+
+Button Background: Coral — #FF6F61
+
+Button Text: Off-White — #F5F7FA
+
+Button Hover Background: Deep Pinkish Red — #E04E3D
+
+*/
+
+body {
+  background: #0b1d51;
+  color: #f5f7fa;
+  font-family: "Playfair Display", serif;
+}

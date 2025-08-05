@@ -1,0 +1,114 @@
+.contact-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+  color: #f5f7fa;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #a3bffa;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  color: #ffffffcc;
+}
+
+.testimonial-highlight {
+  background: #1d2c5e;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-left: 4px solid #ff6f61;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+.testimonial-highlight footer {
+  margin-top: 1rem;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.contact-methods {
+  margin-top: 3rem;
+}
+
+.contact-methods h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ff6f61;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-card {
+  flex: 1 1 45%;
+  background: #0b1d51;
+  padding: 1.2rem;
+  border-radius: 8px;
+  color: #a3bffa;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+.contact-card:hover {
+  background: #ff6f61;
+  color: #fff;
+}
+
+.contact-card span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+.social-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.social-section h2 {
+  color: #a3bffa;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  margin: 0 1rem;
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.response-time {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    flex: 1 1 100%;
+  }
+}

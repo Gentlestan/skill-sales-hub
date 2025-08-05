@@ -1,0 +1,138 @@
+.about-page {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+  color: #f5f7fa;
+}
+
+.about-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-image-wrapper {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-intro {
+  flex: 2;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #a3bffa;
+}
+
+.about-tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ffffffcc;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: #ff6f61;
+}
+
+.about-story p,
+.about-values ul,
+.about-results p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.values-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.results-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.result-card {
+  flex: 1;
+  min-width: 200px;
+  background-color: #1d2c5e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.result-card h3 {
+  font-size: 2rem;
+  color: #a3bffa;
+  margin-bottom: 0.5rem;
+}
+
+.result-card p {
+  font-size: 1rem;
+}
+
+.about-cta {
+  text-align: center;
+  margin-top: 4rem;
+  background: #0b1d51;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  box-shadow: inset 0 0 20px rgba(255, 111, 97, 0.2);
+}
+
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f5f7fa;
+}
+
+.about-cta p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.cta-button {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e85c4f;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .result-card {
+    flex: 1 1 100%;
+  }
+}
