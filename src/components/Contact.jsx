@@ -21,16 +21,16 @@ export default function Contact() {
         <div className="contact-grid">
           <a href="mailto:Salesskillshub@gmail.com" className="contact-card">
             📧 Email Me  
-            <span>okoronkwo@example.com</span>
+            <span>Salesskillshub@gmail.com</span>
           </a>
 
           <a href="tel:+2348012345678" className="contact-card">
             📞 Call Me  
-            <span>+234 813 215 2804</span>
+            <span>+234 913 165 6244</span>
           </a>
 
           <a
-            href="https://wa.me/2348132152804"
+            href="https://wa.me/2349131656244"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"
@@ -40,7 +40,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://calendly.com/sohazulike/30min"
+            href="https://calendly.com/chijiokevictor00/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"

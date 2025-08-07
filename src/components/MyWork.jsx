@@ -1,6 +1,7 @@
 // Portfolio.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate, Link } from 'react-router-dom';
 import naijadiaspora from '../assets/images/naijadiaspora.jpg';
 import bellawonder from '../assets/images/bellawonder.jpg';
 import hallifas from '../assets/images/hallifas.jpg'
@@ -64,16 +65,20 @@ const projects = [
 export default function Portfolio() {
   const [selected, setSelected] = useState(null);
 
+  const navigate = useNavigate();
+
+
   return (
     <div className="portfolio-page">
       <header className="portfolio-hero">
         <h1>Featured Work & Case Studies</h1>
-        <button
-          className="cta-button"
-          onClick={() => window.location.href = '#contact'}
-        >
-          Let’s Talk Strategy & Copy
-        </button>
+       <button
+        className="cta-button"
+        onClick={() => navigate('/contact')}
+  >
+        Let’s Talk Strategy & Copy
+    </button>
+
       </header>
 
       <section className="projects-grid">
@@ -143,8 +148,10 @@ export default function Portfolio() {
       </AnimatePresence>
 
       <footer className="portfolio-cta">
-        <h2>Ready for results-driven storytelling and copy that sells?</h2>
-        <a href="#contact" className="cta-button">Let's Build Your Next Case Study</a>
+        <h2>Ready for results-driven strategy, and copy that sell?</h2>
+        <Link to="/contact" className="cta-button">
+          Let's Build Your Next Case Study
+        </Link>
       </footer>
     </div>
   );

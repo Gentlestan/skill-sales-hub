@@ -56,8 +56,8 @@ export default function About() {
 
       <section className="about-cta">
         <h2>Let’s Build Your Next Breakthrough</h2>
-        <p>Ready to scale with powerful, persuasive copy? Let's connect.</p>
-        <a href="/contact" className="cta-button">Work With Me</a>
+        <p>Ready to scale with powerful, persuasive strategy? Let's connect.</p>
+        <Link to="/contact" className="cta-button">Work With Me</Link>
       </section>
     </div>
   );

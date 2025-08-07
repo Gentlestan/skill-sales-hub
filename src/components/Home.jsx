@@ -38,7 +38,7 @@ export default function Home() {
           <h1 className="greeting"><span className="highlight">Hello</span>, I'm</h1>
           <h2 className="name">Okoronkwo Victor</h2>
           <p>
-            I am a creative sales strategist & Ads <br />copywriter who makes sales work for you!
+            I am a creative sales strategist & Ads <br />copywriter who make sales work for you!
           </p>
           <a href="mailto:Salesskillshub@gmail.com" className="cta-btn cta-before-img">Get In Touch</a>
         </div>
