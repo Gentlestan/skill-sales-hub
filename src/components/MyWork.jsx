@@ -46,7 +46,7 @@ const projects = [
     id: 3,
     title: 'Haliffas High-Ticket Funnel 💰',
     client: 'Haliffas Global Resources',
-    tagline: 'Sold ₦2.5M machine with a refined sales funnel',
+    tagline: 'Sold ₦2.5M machine with a refined sales strategy',
     role: 'Funnel audit, new messaging, CTA rework',
     image: hallifas,
     metrics: { revenue: '₦2.5 M', product: 'High-ticket machine' },
